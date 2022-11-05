@@ -9,7 +9,6 @@ import { MainComponent } from './main/main.component';
 @NgModule({
   declarations: [
     MainComponent,
-    
   ],
   imports: [
     FormsModule,
@@ -19,5 +18,5 @@ import { MainComponent } from './main/main.component';
   providers: [],
   exports: [],
 })
-export class CadastroModule {}
+export class MainModule {}
  

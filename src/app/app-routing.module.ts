@@ -4,6 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: 'main', component: MainComponent},
+
+  // { path: '', pathMatch: 'full', redirectTo: 'projetos' },
+  // {
+  //   path: 'signed-in-redirect',
+  //   pathMatch: 'full',
+  //   redirectTo: 'projetos',
+  // },
   // { path: '', redirectTo: 'main', pathMatch: 'full' },
   // {
   //   path: '',

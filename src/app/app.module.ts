@@ -1,3 +1,4 @@
+import { ScreensModule } from './screen/screens.modules';
 import { HeaderComponent } from './header/header.component';
 
 import { NgModule } from '@angular/core';
@@ -10,11 +11,11 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     HeaderComponent
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ScreensModule
   ],
   providers: [],
   bootstrap: [AppComponent]
