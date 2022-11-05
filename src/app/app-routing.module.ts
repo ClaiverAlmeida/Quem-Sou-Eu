@@ -3,25 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: 'main', component: MainComponent},
+  {path: '', redirectTo:'who-am-I', pathMatch: 'full' },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./screen/screens.modules').then((x) => x.ScreensModule),
+  },
 
-  // { path: '', pathMatch: 'full', redirectTo: 'projetos' },
-  // {
-  //   path: 'signed-in-redirect',
-  //   pathMatch: 'full',
-  //   redirectTo: 'projetos',
-  // },
-  // { path: '', redirectTo: 'main', pathMatch: 'full' },
-  // {
-  //   path: '',
-  //   children: [
-  //     {
-  //       path: '',
-  //       loadChildren: () =>
-  //         import('./screen/screens.modules').then((x) => x.ScreensModule),
-  //     },
-  //   ],
-  // },
 ];
 
 @NgModule({

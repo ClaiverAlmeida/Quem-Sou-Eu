@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+
+  @Input() atual = ""
   listHeader: any[] = [];
   fullScreen: boolean = true;
   constructor() {}
@@ -25,10 +27,10 @@ export class HeaderComponent implements OnInit {
   }
   getListHeader = () => {
     this.listHeader = [
-      { title: 'SOBRE', href: 'sobre' },
-      { title: 'PROJETOS', href: 'projetos' },
-      { title: 'SETUP', href: 'setup' },
-      { title: 'CONTATO', href: 'contato' },
+      { title: 'SOBRE', rota: '/sobre',ordem: "inicio" },
+      { title: 'PROJETOS', rota: '/projetos',ordem: "meio" },
+      { title: 'CURRÍCULO', rota: '/corriculo' ,ordem: "meio" },
+      { title: 'CONTATO', rota: '/who-am-I',ordem: "fim" },
     ];
   };
 }

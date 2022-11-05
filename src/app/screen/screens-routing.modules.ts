@@ -4,10 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
+  // { path: '', component: MainComponent, pathMatch: 'full' },
   {
-    path: 'main',
-    component: MainComponent,
+    path: 'who-am-I',
+    loadChildren: () => import('./main/main.module').then((x) => x.MainModule),
+  },
+  {
+    path: 'sobre',
+    loadChildren: () =>
+      import('./sobre/sobre.module').then((x) => x.SobreModule),
   },
 ];
 
