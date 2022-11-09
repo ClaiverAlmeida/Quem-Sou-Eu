@@ -1,0 +1,43 @@
+.header {
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-do-header {
+  
+  font-size: 15px;
+}
+.selecionado{
+  margin: 0px auto;
+  height: 1px;
+  width: 2rem;
+  background: var(--ca-color-purple);
+  transition: opacity var(--transitions-duration) ease-in-out;
+}
+
+
+.btns-header {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+.btn-title {
+  font-weight: 100;
+  color: var(--ca-color-dark);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* perspective: 90rem; */
+  perspective-origin: 30% 60%;
+}
+
+.div-transform {
+  display: flex;
+  /* transform: rotateX(12deg) rotateY(15deg) rotateZ(-4deg) scale3d(1, 1, -0.9)
+    scale(1.1) translateX(51px); */
+}

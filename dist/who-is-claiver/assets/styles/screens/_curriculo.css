@@ -1,0 +1,39 @@
+.corpo {
+    padding-inline: 25%;
+    padding-top: 3rem;
+  }
+  
+  .corpo-hd {
+    line-height: 10px;
+    padding-inline: 10%;
+    margin-top: 6rem;
+  }
+  .title-curriculo {
+    border-radius: 5px;
+    background-color: var(--ca-color-purple);
+    text-align: center;
+  }
+  .subtitle-office {
+    color: var(--ca-color-white);
+    font-size: 29px;
+    font-weight: 500;
+  }
+  
+  .contacts {
+    color: var(--ca-color-white);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .subtitle-curriculo {
+    color: var(--ca-color-white);
+    font-size: 17px;
+    font-weight: 800;
+  }
+  
+  .header-curriculo {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    
+  }

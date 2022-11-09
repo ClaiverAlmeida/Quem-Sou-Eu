@@ -1,0 +1,73 @@
+.ca-btn {
+  cursor: pointer;
+  color: var(--ca-color-purple);
+  color: --var();
+  border-radius: 8px;
+  padding: 0px 18px;
+  display: flex;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  overflow: hidden;
+  transform: translate(0);
+}
+
+.ca-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.ca-btn {
+  background-size: cover;
+  transform: scale(1.02);
+  margin-inline: 10px;
+}
+.ca-btn-default:hover {
+  transform: scale(1.11);
+  box-shadow: var(--ca-color-purple) 0px 3px, var(--ca-color-purple1) 0px 6px,
+    var(--ca-color-purple2) 0px 9px, var(--ca-color-purple3) 0px 12px,
+    var(--ca-color-purple4) 0px 15px,
+    var(--ca-color-purple4) 0px 30px 60px -12px inset,
+    var(--ca-color-purple4) 0px 18px 36px -18px inset;
+  /* color: var(--ca-color-white); */
+}
+
+.ca-btn-inicio:hover {
+  transform: scale(1.11);
+  box-shadow: var(--ca-color-purple) -5px 3px, var(--ca-color-purple1) -10px 6px,
+    var(--ca-color-purple2) -15px 9px, var(--ca-color-purple3) -20px 12px,
+    var(--ca-color-purple4) -25px 15px,
+    var(--ca-color-purple4) 0px 30px 60px -12px inset,
+    var(--ca-color-purple4) 0px 18px 36px -18px inset;
+  /* color: var(--ca-color-white); */
+}
+
+.ca-btn-meio:hover {
+  transform: scale(1.11);
+  box-shadow: var(--ca-color-purple) 0px 3px, var(--ca-color-purple1) 0px 6px,
+    var(--ca-color-purple2) 0px 9px, var(--ca-color-purple3) 0px 12px,
+    var(--ca-color-purple4) 0px 15px,
+    var(--ca-color-purple4) 0px 30px 60px -12px inset,
+    var(--ca-color-purple4) 0px 18px 36px -18px inset;
+}
+
+.ca-btn-fim:hover {
+  transform: scale(1.11);
+  box-shadow: var(--ca-color-purple) 5px 3px, var(--ca-color-purple1) 10px 6px,
+    var(--ca-color-purple2) 15px 9px, var(--ca-color-purple3) 20px 12px,
+    var(--ca-color-purple4) 25px 15px,
+    var(--ca-color-purple4) 0px 30px 60px -12px inset,
+    var(--ca-color-purple4) 0px 18px 36px -18px inset;
+}
+
+.ca-btn::before {
+  background: var(--ca-color-dark);
+}

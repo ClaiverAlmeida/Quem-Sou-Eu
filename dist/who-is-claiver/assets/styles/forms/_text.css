@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  margin-top: -1em;
+}                                                                                               
+
+.subtitle {
+  width: 100%;
+  color: var(--ca-color-white);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.descricao {
+  display: grid;
+  color: var(--ca-color-gray);
+}
+
+.destaque {
+  font-style: italic;
+  border-left: 3px solid var(--ca-color-gray);
+  margin-block: 1rem;
+}
+
+.cargo-title {
+  font-size: 18px;
+  font-weight: 500;                               
+}
