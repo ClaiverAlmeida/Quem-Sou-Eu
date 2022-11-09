@@ -38,4 +38,5 @@ export const dadosWhoAmI = {
   nome: 'Claiver Araujo',
   cargo: 'Full Stack Developer',
   linkedin: 'https://www.linkedin.com/in/claiver-araujo-a87685149/',
+  repositorio: 'https://github.com/ClaiverAlmeida/Quem-Sou-Eu',
 };

@@ -4,14 +4,18 @@
         <span class="title " [ngStyle]="{'font-size': mobile ?'25px':''}">Oi, eu sou</span>
         <h1>
             <div class="ondas-de-palavras ">
-                <span [ngStyle]="{'font-size': mobile ?'30px':''}">{{dados.nome}}.<label class="meu-nome">|</label> </span>
-                <span [ngStyle]="{'font-size': mobile ?'30px':''}">{{dados.nome}}.<label class="meu-nome">|</label> </span>
+                <span [ngStyle]="{'font-size': mobile ?'30px':''}">{{dados.nome}}.<label class="meu-nome">|</label>
+                </span>
+                <span [ngStyle]="{'font-size': mobile ?'30px':''}">{{dados.nome}}.<label class="meu-nome">|</label>
+                </span>
             </div>
         </h1>
         <div class="name">
             <span class="title " [ngStyle]="{'font-size': mobile ?'25px':''}">{{dados.cargo}}</span>
         </div>
-        <button type="button" class="btn-linkedin"  [ngStyle]="{'width': mobile? '300px':'480px'}" > <a [href]="dados.linkedin" target="_blank"
-                class="btn-link">Linkedin</a></button>
+        <button type="button" class="btn-linkedin" [ngStyle]="{'width': mobile? '300px':'480px'}"> <a
+                [href]="dados.linkedin" target="_blank" class="btn-link">Linkedin</a></button>
+        <button type="button" class="btn-linkedin" [ngStyle]="{'width': mobile? '300px':'480px'}"> <a
+                [href]="dados.repositorio" target="_blank" class="btn-link">Rep. GitHub </a></button>
     </div>
 </div>
