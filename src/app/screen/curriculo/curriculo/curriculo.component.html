@@ -1,0 +1,32 @@
+<app-header atual="/curriculo"></app-header>
+<div class="corpo{{ hdResolution? '-hd' : ''}}">
+    <h1>
+        <div class="ondas-de-palavras title ">
+            <span [ngStyle]="{'font-size': mobile ?'2rem':''}">Claiver Araujo </span>
+            <span [ngStyle]="{'font-size': mobile ?'2rem':''}">Claiver Araujo</span>
+        </div>
+    </h1>
+    <div class="header-curriculo{{false? '-mobile' : ''}}" style="display: grid">
+        <div>
+            <span class="subtitle-office">Pleno Fullstack </span>
+        </div>
+        <div style="display: flex;justify-content:space-between;">
+            <span class="contacts">(11) 9 7073-6987</span>
+            <span class="contacts">claiveralmeida@gmail.com </span>
+        </div>
+    </div>
+    <div *ngFor="let item of curriculo">
+        <div class="subtitle title-curriculo">
+            {{item.title}}
+        </div>
+        <div class="descricao">
+            <span class="subtitle-curriculo" [innerText]="item.period || ''"> </span>
+            <span class="description" [innerText]="item.description|| ''"> </span>
+            <div *ngFor="let xp of item.professionalExperience" class="descricao">
+                <span class="subtitle-curriculo" [innerText]="xp.office || ''"></span>
+                <span class="subtitle-curriculo" [innerText]="xp.company || ''"></span>
+                <span class="description" [innerText]="xp.description || ''"></span>
+            </div>
+        </div>
+    </div>
+</div>

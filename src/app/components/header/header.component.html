@@ -1,7 +1,7 @@
 
 <div class="header">
     <!-- Utilizando angular. -->
-    <div class="area-do-header" *ngIf="!this.fullScreen">
+    <div class="area-do-header" *ngIf="this.mobile">
         <div class="header-media">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
                 color="white" viewBox="0 0 16 16">
@@ -10,11 +10,11 @@
             </svg>
         </div>
     </div>
-    <div class="area-do-header" *ngIf="this.fullScreen">
+    <div class="area-do-header" *ngIf="!this.mobile">
         <div class="container">
             <div class="div-transform">
                 <div *ngFor="let item of listHeader">
-                    <app-ca-button  [rota]="item.rota"  [title]="item.title"[ordem]="item.ordem"></app-ca-button>
+                    <app-ca-button  [rota]="item.rota"  [title]="item.title"[ordem]="item.ordem"  width="{{hdResolution?'80px':'120px'}}"></app-ca-button>
                     <div class="{{item.rota == atual? 'selecionado':''}}"></div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MainModule } from './main/main.module';
 import { ScreenRoutingModule } from './screens-routing.modules';
-import { ComponentsModule } from '../component/components.module';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [],

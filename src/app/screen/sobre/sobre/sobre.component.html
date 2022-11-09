@@ -1,1 +1,38 @@
 <app-header atual="/sobre"></app-header>
+<div class="corpo{{ hdResolution? '-hd' : ''}}">
+    <h1>
+        <div class="ondas-de-palavras title">
+            <span>Sobre mim. </span>
+            <span>Sobre mim.</span>
+        </div>
+    </h1>
+    <div class="sobre{{mobile? '-mobile' : ''}}">
+        <div class="img-perfil">
+            <img [src]="sobreMim.img" alt="" srcset="" class="img{{mobile? '-mobile' : ''}}">
+        </div>
+        <div class=" informacoes{{mobile? '-mobile' : ''}}">
+            <label for="" [innerHTML]="sobreMim.description">
+            </label>
+        </div>
+    </div>
+    <div class="bio">
+        <div class="subtitle">
+            Bio
+        </div>
+        <div class="descricao destaque">
+            <span style="margin-left: 1rem;">{{sobreMim.bio}} </span>
+        </div>
+        <div class="subtitle">
+            Carreira
+        </div>
+        <div class="descricao" *ngFor="let dados of sobreMim.carreira">
+            <label class="subtitle cargo-title">{{dados.cargo}}</label>
+            <label>
+                <a [href]="dados.hrefEmpresa" target="_blank"class="destaque-span">{{dados.empresa}}</a>
+                {{dados.local}}
+            </label>
+            <label>
+                {{dados.experiencia}}
+            </label>
+        </div>
+    </div>

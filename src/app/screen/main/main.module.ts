@@ -1,5 +1,5 @@
 import { MainRoutingModule } from './main-routing.module';
-import { ComponentsModule } from './../../component/components.module';
+import { ComponentsModule } from './../../components/components.module';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';

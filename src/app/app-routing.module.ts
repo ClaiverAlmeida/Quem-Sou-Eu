@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo:'who-am-I', pathMatch: 'full' },
+  {path: '', redirectTo:'quem-sou-eu', pathMatch: 'full' },
   {
     path: '',
     loadChildren: () =>

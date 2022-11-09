@@ -6,13 +6,18 @@ import { NgModule } from '@angular/core';
 export const routes: Routes = [
   // { path: '', component: MainComponent, pathMatch: 'full' },
   {
-    path: 'who-am-I',
+    path: 'quem-sou-eu',
     loadChildren: () => import('./main/main.module').then((x) => x.MainModule),
   },
   {
     path: 'sobre',
     loadChildren: () =>
       import('./sobre/sobre.module').then((x) => x.SobreModule),
+  },
+  {
+    path: 'curriculo',
+    loadChildren: () =>
+      import('./curriculo/curriculo.module').then((x) => x.CurriculoModule),
   },
 ];
 

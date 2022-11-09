@@ -1,0 +1,37 @@
+@import url(./components/_components.css);
+@import url(./_variables.css);
+@import url(./forms/_forms.css);
+
+
+
+body {
+    height: 90vh;
+  }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+  }
+  
+  
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--ca-color-dark);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--ca-color-purple);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: var(--ca-color-purple2);
+  }
+  
