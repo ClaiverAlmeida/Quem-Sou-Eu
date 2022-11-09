@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 export const routes: Routes = [
   // { path: '', component: MainComponent, pathMatch: 'full' },
   {
-    path: 'quem-sou-eu',
+    path: 'inicio',
     loadChildren: () => import('./main/main.module').then((x) => x.MainModule),
   },
   {
